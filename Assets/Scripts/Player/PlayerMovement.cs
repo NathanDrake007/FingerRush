@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 50f;
@@ -22,7 +22,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        processInput();
+        if(!EventSystem.current.IsPointerOverGameObject())
+            processInput();
         movePlayer();
     }
     private void processInput()

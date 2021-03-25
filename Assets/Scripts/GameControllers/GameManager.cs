@@ -45,12 +45,4 @@ public class GameManager : MonoBehaviour
         highScoreSystem.GetComponent<HighScoreSystem>().enabled = true;
         isAlive = true;
     }
-    public void exit()
-    {
-        Application.Quit();
-    }
-    public void settings()
-    {
-        Debug.Log("Settings");
-    }
 }
