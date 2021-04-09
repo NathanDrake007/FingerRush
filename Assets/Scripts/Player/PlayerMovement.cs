@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 50f;
@@ -22,8 +21,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!EventSystem.current.IsPointerOverGameObject())
-            processInput();
+        processInput();
         movePlayer();
     }
     private void processInput()
@@ -33,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
             position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (findObject())
             {
+                Debug.Log("hello");
                 isControlled = true;
                 isReleased = false;
                 gm.initializeScene();

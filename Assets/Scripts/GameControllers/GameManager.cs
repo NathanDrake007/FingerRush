@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         highscore.SetText(PlayerPrefs.GetInt("HighScore", 0).ToString());
-        Debug.Log(ScreenInfo.isRestarted);
         if (ScreenInfo.isRestarted)
             MainScreen.SetActive(false);
     }
