@@ -1,91 +1,201 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19042.906; Version 2009; 64bit' Language: 'en' Physical Memory: 16249 MB
+OS: 'Windows 10 Home Single Language; OS build 19042.867; Version 2009; 64bit' Language: 'en' Physical Memory: 8072 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2019.4.17f1\Editor\2020.3.0f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Projects/GitHub/FingerRush
+E:/Projects/U N I T Y/FingerRush
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49919
-Successfully changed project path to: D:/Projects/GitHub/FingerRush
-D:/Projects/GitHub/FingerRush
+59383
+Successfully changed project path to: E:/Projects/U N I T Y/FingerRush
+E:/Projects/U N I T Y/FingerRush
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 49.56 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 41.56 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Projects/GitHub/FingerRush/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Projects/U N I T Y/FingerRush/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) HD Graphics 530 (ID=0x1912)
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f91)
     Vendor:   
-    VRAM:     8124 MB
-    Driver:   27.20.100.8681
+    VRAM:     3962 MB
+    Driver:   27.21.14.5167
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/2020.3.0f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56240
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.003533 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.004672 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 42.00 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 42.71 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.543 seconds
+- Completed reload, in  2.248 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000972 seconds.
+Registered in 0.000882 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 41.73 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 30.72 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.130 seconds
+- Completed reload, in  0.944 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1711 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 83.5 MB.
-System memory in use after: 83.4 MB.
+System memory in use after: 83.6 MB.
 
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2154.
-Total: 2.521100 ms (FindLiveObjects: 0.232700 ms CreateObjectMapping: 0.081200 ms MarkObjects: 2.039800 ms  DeleteObjects: 0.166100 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2159.
+Total: 2.018300 ms (FindLiveObjects: 0.228500 ms CreateObjectMapping: 0.175700 ms MarkObjects: 1.549500 ms  DeleteObjects: 0.063300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Player/PlayerMovement.cs
-  artifactKey: Guid(ba68593e158570f419d387ff0df3c389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player/PlayerMovement.cs using Guid(ba68593e158570f419d387ff0df3c389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b6814de0c5f984d6ec6539c53223b3c') in 0.092898 seconds
-  Import took 0.116564 seconds .
+  path: Assets/Prefabs/Obstacles/BallObstacle.prefab
+  artifactKey: Guid(42339c1573a189040bebf24535899c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/BallObstacle.prefab using Guid(42339c1573a189040bebf24535899c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71bf626b48f98e9ede92a5090f34a7e3') in 0.165441 seconds
+  Import took 0.230335 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007679 seconds.
+  path: Assets/Prefabs/Obstacles/SlabObstacle-v4.prefab
+  artifactKey: Guid(7489a394a9ad4b54bab380b482bf94db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/SlabObstacle-v4.prefab using Guid(7489a394a9ad4b54bab380b482bf94db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389490c026494ad8d22a1b628e6dc369') in 0.011097 seconds
+  Import took 0.113009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Prefabs/Obstacles/ZigZagObstacle-v1.prefab
+  artifactKey: Guid(3577cdbad395bf14fa918d40b9db201d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/ZigZagObstacle-v1.prefab using Guid(3577cdbad395bf14fa918d40b9db201d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dab908d576f021e970c6df4b2bddac9f') in 0.048367 seconds
+  Import took 0.185923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/Prefabs/Obstacles/ZigZagObstacle-v2.prefab
+  artifactKey: Guid(e67f53399ca03354e9f51b2813a95950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/ZigZagObstacle-v2.prefab using Guid(e67f53399ca03354e9f51b2813a95950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062601143852ddb56bb8146bdb96c9b0') in 0.011702 seconds
+  Import took 0.018786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Prefabs/Obstacles/ZigZagObstacle-v4.prefab
+  artifactKey: Guid(04dd1866d96237544921e94170afe7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/ZigZagObstacle-v4.prefab using Guid(04dd1866d96237544921e94170afe7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73acf9d87cdd043993f9b7e1644939de') in 0.043525 seconds
+  Import took 0.051812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Prefabs/Obstacles/SlabObstacle-v2.prefab
+  artifactKey: Guid(37b19608ee2c3f342b177e200252e797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/SlabObstacle-v2.prefab using Guid(37b19608ee2c3f342b177e200252e797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71418097a5d96c864f86049ea607a348') in 0.011279 seconds
+  Import took 0.024853 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Prefabs/Obstacles/SlabObstacle-v1.prefab
+  artifactKey: Guid(7942bf88ed5cef84c88adca9cfeaf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/SlabObstacle-v1.prefab using Guid(7942bf88ed5cef84c88adca9cfeaf1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2e1f8b63b601e7ea6e8d592e5636fa') in 0.021758 seconds
+  Import took 0.054113 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/Prefabs/Obstacles/SlabObstacle-v3.prefab
+  artifactKey: Guid(bf2d02949e4bd9648af8a725d0ede721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/SlabObstacle-v3.prefab using Guid(bf2d02949e4bd9648af8a725d0ede721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727939a4d7d6ef6e15047df66da36b08') in 0.008742 seconds
+  Import took 0.022431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001388 seconds.
+  path: Assets/Prefabs/Obstacles/SlabObstacle-v1 1.prefab
+  artifactKey: Guid(5dd2bd5e7c1b2c341acdef2ca5cfea39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/SlabObstacle-v1 1.prefab using Guid(5dd2bd5e7c1b2c341acdef2ca5cfea39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5446870ebcb325622c7cff43364c5aff') in 0.019419 seconds
+  Import took 0.060630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Prefabs/Obstacles/ZigZagObstacle-v3.prefab
+  artifactKey: Guid(2065fcfe5b2df20409ffe925284b68cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Obstacles/ZigZagObstacle-v3.prefab using Guid(2065fcfe5b2df20409ffe925284b68cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f20933649248ff8e3ec1cafb6c7743c') in 0.009665 seconds
+  Import took 0.083182 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 52.0 MB.
+System memory in use after: 52.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2166.
+Total: 2.961600 ms (FindLiveObjects: 0.511900 ms CreateObjectMapping: 0.163900 ms MarkObjects: 2.267800 ms  DeleteObjects: 0.014400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000871 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.781 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1690 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.3 MB.
+System memory in use after: 85.4 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2170.
+Total: 2.035500 ms (FindLiveObjects: 0.217900 ms CreateObjectMapping: 0.067600 ms MarkObjects: 1.729400 ms  DeleteObjects: 0.019800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
