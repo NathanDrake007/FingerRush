@@ -1290,14 +1290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 4048808671898411034, guid: 7942bf88ed5cef84c88adca9cfeaf1db, type: 3}
-  - {fileID: 5150372502090640189, guid: 3577cdbad395bf14fa918d40b9db201d, type: 3}
-  - {fileID: 5150372502090640189, guid: e67f53399ca03354e9f51b2813a95950, type: 3}
-  - {fileID: 5150372502090640189, guid: 2065fcfe5b2df20409ffe925284b68cb, type: 3}
-  - {fileID: 4048808671898411034, guid: 37b19608ee2c3f342b177e200252e797, type: 3}
-  - {fileID: 4048808671898411034, guid: bf2d02949e4bd9648af8a725d0ede721, type: 3}
-  - {fileID: 4048808671898411034, guid: 7489a394a9ad4b54bab380b482bf94db, type: 3}
-  - {fileID: 5150372502090640189, guid: 04dd1866d96237544921e94170afe7ec, type: 3}
+  - {fileID: 8244916245191181341, guid: 5dd2bd5e7c1b2c341acdef2ca5cfea39, type: 3}
   obstaclePosition: {x: 0, y: 15, z: 0}
   obstacleSpeed:
   - 7
