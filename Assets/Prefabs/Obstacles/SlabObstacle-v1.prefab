@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4853174193873259941}
   - component: {fileID: 3809076042604170950}
   - component: {fileID: 5215475487096426468}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: SlabObstacleLeft
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2546524184496245044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.98, y: 2, z: 0}
+  m_LocalPosition: {x: 1.98, y: 3, z: 0}
   m_LocalScale: {x: 1.43, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8244916245191181338}
@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6431102625396067453}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: SpwanPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,8 +148,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8244916245191181338}
-  m_Layer: 9
-  m_Name: SlabObstacle-v1 1
+  m_Layer: 3
+  m_Name: SlabObstacle-v1
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 8244916246018252705}
   - component: {fileID: 8244916246018252732}
   - component: {fileID: 8244916246018252735}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: SlabObstacleRight
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8244916246018252704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9, y: -5.19, z: 0}
+  m_LocalPosition: {x: -1.9, y: -3, z: 0}
   m_LocalScale: {x: 1.43, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8244916245191181338}

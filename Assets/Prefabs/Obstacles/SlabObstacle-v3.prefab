@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1397325822098008186}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: SpwanPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4048808671898411037}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: SlabObstacle-v3
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 4048808672765328294}
   - component: {fileID: 4048808672765328315}
   - component: {fileID: 4048808672765328312}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: SlabObstacleRight
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4048808672765328295}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.85, y: -3.86, z: 0}
+  m_LocalPosition: {x: -1.85, y: -5, z: 0}
   m_LocalScale: {x: 1.43, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4048808671898411037}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 118747127820242105}
   - component: {fileID: 1179873317438240292}
   - component: {fileID: 4768114306094531914}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: SlabObstacleRight (1)
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -199,7 +199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5335961131212708016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.85, y: 7.37, z: 0}
+  m_LocalPosition: {x: -1.85, y: 5, z: 0}
   m_LocalScale: {x: 1.43, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4048808671898411037}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 649188612287097250}
   - component: {fileID: 9117290981474839233}
   - component: {fileID: 160589169692945379}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: SlabObstacleLeft
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7569570131217902899}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.85, y: 2, z: 0}
+  m_LocalPosition: {x: 1.85, y: 0, z: 0}
   m_LocalScale: {x: 1.43, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4048808671898411037}

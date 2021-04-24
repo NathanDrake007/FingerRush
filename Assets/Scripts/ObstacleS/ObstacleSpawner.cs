@@ -4,15 +4,16 @@ public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] GameObject[] obstaclePrefabs;
     [SerializeField] Vector3 obstaclePosition;
-    [SerializeField] float[] obstacleSpeed;
-    [SerializeField] GameObject ballObstacle;
+    [SerializeField] GameObject[] randomObstacle;
     public float counter = 6f;
     float timeBtwObstacle = 6;
     float timeBtwSpwan = 1f;
-    float decreaseTime = 0.05f;
     public float minTime = 0.5f;
+    public float startObstacleSpeed = 8f;
     public float maxSpeedObstacle = 12f;
+    public float rainBallSpeed = 12f;
     public float startTimeBtwSpwan = 1f;
+    public GameObject player;
     bool spwan = true;
     Obstacle ob;
     private void Update()
@@ -21,7 +22,7 @@ public class ObstacleSpawner : MonoBehaviour
         {
             spwanObstacle();
             timeBtwObstacle = counter;
-            if(obstacleSpeed[0] <= maxSpeedObstacle)
+            if(startObstacleSpeed <= maxSpeedObstacle)
             {
                 increaseSpeed();
             }
@@ -34,45 +35,45 @@ public class ObstacleSpawner : MonoBehaviour
                 rainBall();
                 timeBtwObstacle -= Time.deltaTime;
             }
-            else
-            {
-                move();
-            }
+            move();
         }
     }
 
     private void move()
     {
-        if (ob.CurrentObstacle.Equals("ZigZagObstacle-v2(Clone)") || ob.CurrentObstacle.Equals("ZigZagObstacle-v4(Clone)"))
+        if (ob != null)
         {
-            if (ob.CurrentPosition.y < -30)
+            ob.moveObstacle();
+            if (ob.CurrentObstacle.Equals("SlabObstacle-v1(Clone)") || ob.CurrentObstacle.Equals("SlabObstacle-v2(Clone)"))
             {
-                ob.destroy();
-                spwan = true;
+                if (ob.CurrentPosition.y + 4f < player.transform.position.y)
+                {
+                    spwan = true;
+                }
+                if (ob.CurrentPosition.y < -14)
+                {
+
+                    ob.destroy();
+                }
+            }
+            if (ob.CurrentObstacle.Equals("SlabObstacle-v3(Clone)") || ob.CurrentObstacle.Equals("SlabObstacle-v4(Clone)"))
+            {
+                if (ob.CurrentPosition.y + 6f < player.transform.position.y)
+                {
+                    spwan = true;
+                }
+                if (ob.CurrentPosition.y < -16)
+                {
+                    ob.destroy();
+                }
             }
         }
-        else if (ob.CurrentObstacle.Equals("SlabObstacle-v3(Clone)") || ob.CurrentObstacle.Equals("SlabObstacle-v4(Clone)"))
-        {
-            if (ob.CurrentPosition.y < -17)
-            {
-                ob.destroy();
-                spwan = true;
-            }
-        }
-        else if(ob.CurrentPosition.y < -12)
-        {
-            ob.destroy();
-            spwan = true;
-        }
-        ob.moveObstacle();
-        Debug.Log(ob.CurrentObstacle);
     }
 
     private void spwanObstacle()
     {
         int index = Random.Range(0, obstaclePrefabs.Length);
-        ob = new Obstacle(obstacleSpeed[index], obstaclePosition, obstaclePrefabs[index]);
-        ob.Initialize();
+        ob = new Obstacle(startObstacleSpeed, obstaclePosition, obstaclePrefabs[index]);
         spwan = false;
     }
 
@@ -81,12 +82,10 @@ public class ObstacleSpawner : MonoBehaviour
         if (timeBtwSpwan <= 0)
         {
             Vector3 position = new Vector3(Random.Range(-5f, 5f),12f, 0f);
-            Instantiate(ballObstacle, position, Quaternion.identity);
+            int index = Random.Range(0, randomObstacle.Length);
+            GameObject ball= Instantiate(randomObstacle[index], position, Quaternion.identity);
+            ball.GetComponent<RainBall>().setSpeed(rainBallSpeed);
             timeBtwSpwan = startTimeBtwSpwan;
-            if(startTimeBtwSpwan > minTime)
-            {
-                startTimeBtwSpwan -= decreaseTime;
-            }
         }
         else
         {
@@ -95,9 +94,6 @@ public class ObstacleSpawner : MonoBehaviour
     }
     private void increaseSpeed()
     {
-        for(int i = 0;i< obstacleSpeed.Length; i++)
-        {
-            obstacleSpeed[i] += 1;
-        }
+        startObstacleSpeed++;
     }
 }

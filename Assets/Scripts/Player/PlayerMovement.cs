@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
             position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             if (findObject())
             {
-                Debug.Log("hello");
                 isControlled = true;
                 isReleased = false;
                 gm.initializeScene();
@@ -98,8 +97,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Obstacle")
+            Debug.Log("collide-1");
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            Debug.Log("collide");
             destroyPlayer();
+        }
     }
     private void OnMouseUp()
     {
@@ -108,8 +111,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void destroyPlayer()
     {
-        Destroy(gameObject);
         Instantiate(effect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
         hs.setHighScore();
         gm.isAlive = false;
     }

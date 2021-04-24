@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject MainScreen;
     public GameObject score;
     public bool isAlive = true;
+    public bool isNewHighScore = false;
     void Start()
     {
         highscore.SetText(PlayerPrefs.GetInt("HighScore", 0).ToString());
@@ -23,14 +24,17 @@ public class GameManager : MonoBehaviour
     {
         if (!isAlive)
         {
-            obstaclePositions.GetComponent<ObstacleSpawner>().enabled = true;
+            obstaclePositions.GetComponent<ObstacleSpawner>().enabled = false;
             highScoreSystem.GetComponent<HighScoreSystem>().enabled = false;
             Invoke("LoadScene", 1f);
         }
     }
     private void LoadScene()
     {
-        SceneManager.LoadScene(1);
+        if (isNewHighScore)
+            SceneManager.LoadScene(1);
+        else
+            SceneManager.LoadScene(0);
     }
     public void initializeScene()
     {

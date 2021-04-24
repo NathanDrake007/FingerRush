@@ -8,15 +8,10 @@ public class HighScoreScreen : MonoBehaviour
     {
        highscore = GameObject.Find("HighScoreDisplay").GetComponent<TextMeshProUGUI>();
        highscore.SetText(PlayerPrefs.GetInt("HighScore", 0).ToString());
+       Invoke("LoadScene", 5f);
     }
-    public void restart()
+    private void LoadScene()
     {
         SceneManager.LoadScene(0);
-        ScreenInfo.isRestarted = true;
-    }
-    public void back()
-    {
-        SceneManager.LoadScene(0);
-        ScreenInfo.isRestarted = false;
     }
 }

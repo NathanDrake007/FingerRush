@@ -4,15 +4,13 @@ public class Obstacle
 {
     float obsSpeed;
     Vector3 spwanPoint;
-    GameObject obstaclePrefab;
     GameObject currentObstacle;
 
     public Obstacle(float obsSpeed,Vector3 spwanPoint,GameObject obstaclePrefab)
     {
         this.obsSpeed = obsSpeed;
         this.spwanPoint = spwanPoint;
-        this.obstaclePrefab = obstaclePrefab;
-
+        currentObstacle = GameObject.Instantiate(obstaclePrefab, spwanPoint, Quaternion.identity);
     }
 
     #region properties 
@@ -26,27 +24,29 @@ public class Obstacle
     }
     public Vector3 CurrentPosition
     {
-        get { return currentObstacle.transform.position; }
+        get { return currentObstacle != null ? currentObstacle.transform.position : Vector3.zero; }
     }
     public string CurrentObstacle
     {
-        get { return currentObstacle.name; }
+        get { return currentObstacle != null ? currentObstacle.name : ""; }
     }
     #endregion
 
     #region methods
-    public void Initialize()
-    {
-        currentObstacle = GameObject.Instantiate(obstaclePrefab, spwanPoint, Quaternion.identity);
-    }
 
     public void moveObstacle()
     {
+        if(currentObstacle != null)
         currentObstacle.transform.Translate(Vector2.down * obsSpeed * Time.deltaTime);
     }
     public void destroy()
     {
-        GameObject.Destroy(currentObstacle);
+        Debug.Log("slab destroy");
+        if (currentObstacle != null)
+        {
+            Debug.Log("slab destroy-1");
+            GameObject.Destroy(currentObstacle);
+        }
     }
     #endregion
 

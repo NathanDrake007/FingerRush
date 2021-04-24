@@ -2,18 +2,21 @@
 
 public class RainBall : MonoBehaviour
 {
-    [SerializeField] float obsSpeed = 20f;
-    void Start()
+    float speed = 5f;
+
+    public Transform sprite;
+
+    public void setSpeed(float speed)
     {
-        
+        this.speed = speed;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        transform.Translate(Vector2.down * obsSpeed * Time.deltaTime);
+        sprite.Rotate(Vector3.forward, 10 * Time.deltaTime);
+        transform.Translate(Vector3.down * speed * Time.deltaTime);
     }
-    private void OnBecameInvisible()
+    public void Destroy()
     {
         Destroy(gameObject);
     }
